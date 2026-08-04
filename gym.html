@@ -255,11 +255,11 @@
       <h2>시작 중량과 증량</h2>
       <table>
         <tr><th>종목</th><th style="text-align:right">시작</th><th style="text-align:right">증량</th></tr>
-        <tr><td>V-스쿼트</td><td class="v">50kg</td><td class="v">+10</td></tr>
+        <tr><td>V-스쿼트</td><td class="v">60kg</td><td class="v">+5~10</td></tr>
         <tr><td>레그프레스</td><td class="v">50kg</td><td class="v">+10</td></tr>
         <tr><td>체스트 프레스</td><td class="v">35kg</td><td class="v">+5</td></tr>
         <tr><td>랫풀다운</td><td class="v">35kg</td><td class="v">+5</td></tr>
-        <tr><td>라잉 레그컬</td><td class="v">최저 단수</td><td class="v">+5</td></tr>
+        <tr><td>라잉 레그컬</td><td class="v">10~15kg</td><td class="v">+5</td></tr>
         <tr><td>머신 숄더 프레스</td><td class="v">최저 단수</td><td class="v">+5</td></tr>
       </table>
       <div style="font-size:16px;color:var(--muted);margin-top:11px;line-height:1.5">
@@ -326,12 +326,17 @@
     </div>
 
     <div class="panel">
-      <h2>집 운동 (수·주말, 10분)</h2>
+      <h2>집 운동 (수 또는 주말, 20분)</h2>
       <table>
-        <tr><td>덤벨 숄더 프레스</td><td class="v">3 × 10</td></tr>
-        <tr><td>고블릿 스쿼트</td><td class="v">2 × 15</td></tr>
-        <tr><td>플랭크</td><td class="v">2 × 40초</td></tr>
+        <tr><td>턱걸이</td><td class="v">3세트</td></tr>
+        <tr><td>원팔 덤벨 로우</td><td class="v">3 × 10 / 팔</td></tr>
+        <tr><td>덤벨 RDL</td><td class="v">3 × 12</td></tr>
+        <tr><td>덤벨 컬</td><td class="v">3 × 10</td></tr>
+        <tr><td>플랭크</td><td class="v">3 × 30초</td></tr>
       </table>
+      <div style="font-size:16px;color:var(--muted);margin-top:11px;line-height:1.5">
+        주 1~2회. 자세한 내용은 <b>집</b> 탭.
+      </div>
     </div>
 
     <div class="warn">
@@ -362,9 +367,9 @@ const DAYS = {
     fin:"<b>마무리 8분</b> — 5~6km/h 걷기만. <b>속도를 올리지 않는다</b> (다리가 지쳐 낙상 위험)",
     ex:[
       {n:"매달리기 + 턱걸이", p:"3세트", w:"", s:3, r:60, h:"매달리기 1분 후 안쪽 그립 턱걸이"},
-      {n:"V-스쿼트", p:"3 × 10", w:"50kg 시작", s:3, r:90, h:"평행까지. 꼬리뼈가 등판에서 떨어지면 한계선"},
-      {n:"라잉 레그컬", p:"3 × 12", w:"최저 단수", s:3, r:75, h:"엎드려서 발목 뒤를 롤러에 걸고 다리 접어 올리기. 엉덩이가 들리면 무게가 무겁다"},
-      {n:"랫풀다운", p:"3 × 8~10", w:"35kg 시작", s:3, r:75, h:"턱걸이 10개 하는 능력에 맞춰 중량을 올린다"}
+      {n:"V-스쿼트", p:"3 × 8~12", w:"60kg 시작", s:3, r:90, h:"평행까지. 꼬리뼈가 등판에서 떨어지면 한계선 · 첫 세션은 60→70kg으로 올려가며 8~12회에 2회 남는 무게를 찾는다"},
+      {n:"라잉 레그컬", p:"3 × 12", w:"10~15kg 시작", s:3, r:75, h:"엎드려서 발목 뒤를 롤러에 걸고 다리 접어 올리기. 엉덩이가 들리면 무게가 무겁다"},
+      {n:"랫풀다운", p:"3 × 8~10", w:"35kg 시작", s:3, r:75, h:"턱걸이 10개 하는 능력에 맞춰 중량을 올린다 · 기구가 밀리면 턱걸이 3세트로 대체하고 다음 세션에 랫풀다운을 먼저 한다"}
     ]},
   B: {
     title:"B블록 · 하체 + 밀기", note:"35~40분",
