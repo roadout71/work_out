@@ -256,11 +256,11 @@
       <table>
         <tr><th>종목</th><th style="text-align:right">시작</th><th style="text-align:right">증량</th></tr>
         <tr><td>V-스쿼트</td><td class="v">60kg</td><td class="v">+5~10</td></tr>
-        <tr><td>레그프레스</td><td class="v">50kg</td><td class="v">+10</td></tr>
+        <tr><td>레그프레스</td><td class="v">80kg</td><td class="v">+10</td></tr>
         <tr><td>체스트 프레스</td><td class="v">35kg</td><td class="v">+5</td></tr>
         <tr><td>랫풀다운</td><td class="v">35kg</td><td class="v">+5</td></tr>
         <tr><td>라잉 레그컬</td><td class="v">10~15kg</td><td class="v">+5</td></tr>
-        <tr><td>머신 숄더 프레스</td><td class="v">최저 단수</td><td class="v">+5</td></tr>
+        <tr><td>머신 숄더 프레스</td><td class="v">20kg</td><td class="v">+5</td></tr>
       </table>
       <div style="font-size:16px;color:var(--muted);margin-top:11px;line-height:1.5">
         목표 횟수를 <b>두 세션 연속</b> 여유 있게 채우면 다음에 올린다. 마지막 세트에서 1~2회 더 할 수 있는 지점(RIR 1~2)에서 멈춘다.
@@ -311,6 +311,31 @@
         체지방률 15.6%, 내장지방 3. <b>지방을 뺄 이유가 없다.</b>
         유산소를 늘리면 열량을 태워 증량을 방해한다. 트레드밀 8~9분이 최소량이고 이 이상 늘리지 않는다.
         걷기 7,000보는 별개로 유지.
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>어깨 풀기</h2>
+      <div style="font-size:16px;color:var(--muted);margin-bottom:9px;line-height:1.5">
+        <b>운동 전 3분</b> — 늘려서 버티지 말고 움직이면서 푼다
+      </div>
+      <table>
+        <tr><td>팔 돌리기</td><td class="v">앞뒤 10회씩</td></tr>
+        <tr><td>월 슬라이드</td><td class="v">10회</td></tr>
+        <tr><td>막대 패스스루</td><td class="v">10회</td></tr>
+        <tr><td>어깨 외회전</td><td class="v">15회씩</td></tr>
+        <tr><td>숄더 프레스 예열</td><td class="v">최저 단수 15회</td></tr>
+      </table>
+      <div style="font-size:16px;color:var(--muted);margin:12px 0 9px;line-height:1.5">
+        <b>운동 후 3분</b> — 늘리는 건 여기서
+      </div>
+      <table>
+        <tr><td>가슴 스트레칭</td><td class="v">양쪽 30초</td></tr>
+        <tr><td>크로스바디</td><td class="v">양쪽 30초</td></tr>
+        <tr><td>흉추 신전</td><td class="v">30초</td></tr>
+      </table>
+      <div style="font-size:16px;color:var(--muted);margin-top:11px;line-height:1.5">
+        머리 위로 미는 동작이 막히는 건 어깨보다 <b>흉추가 안 펴져서</b>인 경우가 많다. 월 슬라이드와 흉추 신전이 핵심.
       </div>
     </div>
 
@@ -368,18 +393,18 @@ const DAYS = {
     ex:[
       {n:"매달리기 + 턱걸이", p:"3세트", w:"", s:3, r:60, h:"매달리기 1분 후 안쪽 그립 턱걸이"},
       {n:"V-스쿼트", p:"3 × 8~12", w:"60kg 시작", s:3, r:90, h:"평행까지. 꼬리뼈가 등판에서 떨어지면 한계선 · 첫 세션은 60→70kg으로 올려가며 8~12회에 2회 남는 무게를 찾는다"},
-      {n:"라잉 레그컬", p:"3 × 12", w:"10~15kg 시작", s:3, r:75, h:"엎드려서 발목 뒤를 롤러에 걸고 다리 접어 올리기. 엉덩이가 들리면 무게가 무겁다"},
-      {n:"랫풀다운", p:"3 × 8~10", w:"35kg 시작", s:3, r:75, h:"턱걸이 10개 하는 능력에 맞춰 중량을 올린다 · 기구가 밀리면 턱걸이 3세트로 대체하고 다음 세션에 랫풀다운을 먼저 한다"}
+      {n:"라잉 레그컬", p:"3 × 12~15", w:"10~15kg 시작", s:3, r:75, h:"엎드려서 발목 뒤를 롤러에 걸고 다리 접어 올리기. 엉덩이가 들리면 무게가 무겁다"},
+      {n:"랫풀다운", p:"3 × 10~15", w:"35kg 시작", s:3, r:75, h:"턱걸이 10개 하는 능력에 맞춰 중량을 올린다 · 기구가 밀리면 턱걸이 3세트로 대체하고 다음 세션에 랫풀다운을 먼저 한다"}
     ]},
   B: {
     title:"B블록 · 하체 + 밀기", note:"35~40분",
-    warm:"<b>워밍업 4분</b> — 트레드밀 5km/h 걷기 · 팔 돌리기 · 맨몸 스쿼트 10회",
+    warm:"<b>워밍업 4분</b> — 트레드밀 5km/h 걷기 · 맨몸 스쿼트 10회 · <b>어깨 풀기</b>(팔 돌리기 · 월 슬라이드 10회 · 어깨 외회전 15회씩) — 참고 탭",
     fin:"<b>마무리 9분</b> — 5km/h 2분 → (8km/h 1분 + 5km/h 1분) × 3회 → 5km/h 1분",
     ex:[
       {n:"매달리기 + 턱걸이", p:"3세트", w:"", s:3, r:60, h:"매달리기 1분 후 안쪽 그립 턱걸이"},
-      {n:"레그프레스", p:"3 × 12", w:"50kg 시작", s:3, r:90, h:"원판식"},
-      {n:"체스트 프레스", p:"3 × 8~12", w:"35kg 시작", s:3, r:90, h:""},
-      {n:"머신 숄더 프레스", p:"3 × 10", w:"최저 단수", s:3, r:75, h:"팔꿈치는 정면 기준 30~45도 앞으로 · 5주 이후 덤벨 8~10kg으로 전환"}
+      {n:"레그프레스", p:"3 × 8~12", w:"80kg 시작", s:3, r:90, h:"원판식"},
+      {n:"체스트 프레스", p:"3 × 10~15", w:"35kg 시작", s:3, r:90, h:""},
+      {n:"머신 숄더 프레스", p:"3 × 12~15", w:"20kg 시작", s:3, r:75, h:"팔꿈치는 정면 기준 30~45도 앞으로 · 5주 이후 덤벨 8~10kg으로 전환"}
     ]}
 };
 
